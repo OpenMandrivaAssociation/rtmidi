@@ -4,7 +4,7 @@
 
 Name:		rtmidi
 Version:	4.0.0
-Release:	%mkrel 1
+Release:	1
 Summary:	C++ library for realtime MIDI input/ouput
 License:	MIT
 Group:		Sound/Utilities
@@ -13,7 +13,6 @@ Source0:	https://www.music.mcgill.ca/~gary/rtmidi/release/%{name}-%{version}.tar
 Patch0:		rtmidi-4.0.0-pkgconfig.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gcc-c++
 BuildRequires:	pkgconfig(alsa)
 BuildRequires:	pkgconfig(jack)
 
