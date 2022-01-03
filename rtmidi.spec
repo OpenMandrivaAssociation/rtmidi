@@ -10,7 +10,7 @@ License:	MIT
 Group:		Sound/Utilities
 URL:		https://www.music.mcgill.ca/~gary/rtmidi/index.html
 Source0:	https://www.music.mcgill.ca/~gary/rtmidi/release/%{name}-%{version}.tar.gz
-Patch0:		rtmidi-4.0.0-pkgconfig.patch
+#Patch0:		rtmidi-4.0.0-pkgconfig.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	pkgconfig(alsa)
