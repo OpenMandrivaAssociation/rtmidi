@@ -3,7 +3,7 @@
 %define develname	%mklibname %{name} -d
 
 Name:		rtmidi
-Version:	4.0.0
+Version:	5.0.0
 Release:	1
 Summary:	C++ library for realtime MIDI input/ouput
 License:	MIT
