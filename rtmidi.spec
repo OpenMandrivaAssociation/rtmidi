@@ -71,3 +71,4 @@ find %{buildroot} -name '*.la' -delete
 %{_includedir}/%{name}/
 %{_libdir}/lib%{name}.so
 %{_libdir}/pkgconfig/%{name}.pc
+%{_datadir}/rtmidi/RtMidi*
