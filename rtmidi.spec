@@ -57,7 +57,7 @@ Header files for development with %{name}.
 %install
 %make_install -C build
 
-install -Dm 0755 %{name}-config %{buildroot}%{_bindir}/%{name}-config
+#install -Dm 0755 %{name}-config %{buildroot}%{_bindir}/%{name}-config
 
 # we don't want these
 find %{buildroot} -name '*.la' -delete
@@ -67,7 +67,7 @@ find %{buildroot} -name '*.la' -delete
 
 %files -n %{develname}
 %license README.md
-%{_bindir}/%{name}-config
+#{_bindir}/%{name}-config
 %{_includedir}/%{name}/
 %{_libdir}/lib%{name}.so
 %{_libdir}/pkgconfig/%{name}.pc
