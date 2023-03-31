@@ -4,7 +4,7 @@
 
 Name:		rtmidi
 Version:	5.0.0
-Release:	1
+Release:	2
 Summary:	C++ library for realtime MIDI input/ouput
 License:	MIT
 Group:		Sound/Utilities
