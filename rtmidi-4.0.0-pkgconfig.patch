@@ -1,22 +1,20 @@
-Index: rtmidi-4.0.0/rtmidi.pc.in
-===================================================================
---- rtmidi-4.0.0.orig/rtmidi.pc.in
-+++ rtmidi-4.0.0/rtmidi.pc.in
+diff -up rtmidi-6.0.0/rtmidi.pc.in.1~ rtmidi-6.0.0/rtmidi.pc.in
+--- rtmidi-6.0.0/rtmidi.pc.in.1~	2024-03-02 15:13:46.453382841 +0100
++++ rtmidi-6.0.0/rtmidi.pc.in	2024-03-02 15:14:38.069981613 +0100
 @@ -1,12 +1,12 @@
  prefix=@prefix@
 -exec_prefix=${prefix}
 -libdir=${exec_prefix}/lib
 -includedir=${prefix}/include/rtmidi
-+exec_prefix=@exec_prefix@
++exec_prefix=@prefix@
 +libdir=@libdir@
-+includedir=@includedir@
++includedir=@includedir@/rtmidi
  
--Name: librtmidi
-+Name: rtmidi
+ Name: librtmidi
  Description: RtMidi - a set of C++ classes that provide a common API for realtime MIDI input/output
  Version: @PACKAGE_VERSION@
- Requires: @req@ 
- Libs: -L${libdir} -lrtmidi
- Libs.private: -lpthread
--Cflags: -pthread -I${includedir} @api@
-+Cflags: -pthread -I${includedir}/rtmidi @api@
+ Requires.private: @req@
+-Libs: -L${libdir} -lrtmidi
++Libs: -lrtmidi
+ Libs.private: -lpthread @req_libs@
+ Cflags: -pthread -I${includedir} @api@
